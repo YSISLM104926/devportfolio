@@ -44,7 +44,7 @@ export default function About() {
                     <span className="text-sm text-muted-foreground">Sept - Oct 2024</span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Completed an internship focused on software development and gaining hands-on
+                    Focused on software development and gaining hands-on
                     experience with industry practices and technologies.
                   </p>
                 </div>

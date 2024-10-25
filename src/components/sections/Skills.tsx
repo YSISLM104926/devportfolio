@@ -121,7 +121,7 @@ export default function Skills() {
         >
           {skillCategories.map((category) => (
             <motion.div key={category.title} variants={item}>
-              <Card>
+              <Card style={{height: '200px'}}>
                 <CardHeader>
                   <CardTitle>{category.title}</CardTitle>
                 </CardHeader>
