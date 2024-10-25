@@ -2,20 +2,21 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
+
 const skillCategories = [
   {
     title: 'Frontend',
     skills: [
-      'HTML', 'CSS', 'JavaScript', 'Sass', 'Less', 'Bootstrap', 'TailwindCSS', 'Material-UI', 'Ant Design', 
-      'DaisyUI', 'Shadcn', 'Chakra-UI', 'React.js', 'React Router', 'Next.js', 'Redux', 'Redux-Toolkit', 
-      'React-Query', 'React-Hook-Form', 'TypeScript', 'Axios', 'Firebase (auth)', 'Next-Auth (Google Auth)', 
+      'HTML', 'CSS', 'JavaScript', 'Sass', 'Less', 'Bootstrap', 'TailwindCSS', 'Material-UI', 'Ant Design',
+      'DaisyUI', 'Shadcn', 'Chakra-UI', 'React.js', 'React Router', 'Next.js', 'Redux', 'Redux-Toolkit',
+      'React-Query', 'React-Hook-Form', 'TypeScript', 'Axios', 'Firebase (auth)', 'Next-Auth (Google Auth)',
       'Clerk'
     ],
   },
   {
     title: 'DevOps & Tools',
     skills: [
-      'Git', 'GitHub', 'Docker', 'Xampp', 'Visual Studio Code', 'Atom', 'Geany', 'CodeBlocks', 'Notepad++', 
+      'Git', 'GitHub', 'Docker', 'Xampp', 'Visual Studio Code', 'Atom', 'Geany', 'CodeBlocks', 'Notepad++',
       'PyCharm', 'IntelliJ IDEA', 'Vercel', 'Netlify', 'Postman', 'Figma'
     ],
   },
@@ -28,7 +29,7 @@ const skillCategories = [
   {
     title: 'Graphics & Video Editing',
     skills: [
-      'Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Photopea', 'Sony Vegas', 'Filmora', 'CapCut', 
+      'Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Photopea', 'Sony Vegas', 'Filmora', 'CapCut',
       'Adobe After Effects'
     ],
   },
@@ -47,7 +48,7 @@ const skillCategories = [
   {
     title: 'Soft Skills',
     skills: [
-      'Leadership', 'Self-learning', 'Presentation', 'Adaptability', 'Fast Learning', 'Communication', 
+      'Leadership', 'Self-learning', 'Presentation', 'Adaptability', 'Fast Learning', 'Communication',
       'Problem-solving'
     ],
   },
@@ -84,7 +85,6 @@ const skillCategories = [
 ];
 
 
-
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -104,7 +104,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full">
       <div className="mx-auto w-full">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -112,16 +112,16 @@ export default function Skills() {
         >
           Skills
         </motion.h2>
-        <motion.div 
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid gap-6 md:grid-cols-2"
+          className="grid gap-12 md:grid-cols-2"
         >
           {skillCategories.map((category) => (
             <motion.div key={category.title} variants={item}>
-              <Card style={{height: '200px'}}>
+              <Card style={{ height: '270px' }}>
                 <CardHeader>
                   <CardTitle>{category.title}</CardTitle>
                 </CardHeader>
