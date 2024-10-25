@@ -20,7 +20,7 @@ const skillCategories = [
     ],
   },
   {
-    title: 'Languages',
+    title: 'Languages and others',
     skills: [
       'C', 'C++', 'C#', 'Python', 'JavaScript', 'TypeScript', 'Java', 'PHP', 'SQL', 'Data Structure', 'Algorithm', 'OOP'
     ],
