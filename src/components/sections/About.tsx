@@ -25,7 +25,7 @@ export default function About() {
                   <div className="mb-2 flex items-start justify-between">
                     <div>
                       <h4 className="font-semibold">Junior Software Engineer</h4>
-                      <p className="text-sm text-muted-foreground">SkillersZone LLC</p>
+                      <p className="text-sm text-muted-foreground">Implevista</p>
                     </div>
                     <span className="text-sm text-muted-foreground">Present</span>
                   </div>
